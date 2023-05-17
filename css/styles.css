@@ -121,6 +121,7 @@ img {
     flex-wrap: wrap;
     padding: 1vw 1.5vw;
     width: 100%;
+    background-color: #1a1a1a;
   }
   body > header.fixed {
     min-height: 11vh;
@@ -881,7 +882,7 @@ div#priNav-v2 > nav a:first-child {
 #navHeader {
   position: fixed;
   z-index: 7000;
-  background-color: #fff;
+  background-color: #000;
   border-bottom: 1px solid #1a1a1a;
   width: 100vw;
   padding-left: 5vw;
@@ -1207,13 +1208,18 @@ div.containSlider div.content div > a {
 }
 nav a.ctaButton {
   background: none;
-  border-color: #1a1a1a;
-  color: #1a1a1a !important;
+  border-color: #fff;
+  color: #fff !important;
   margin-left: 0;
   margin-right: 1.5vw;
   margin-bottom: 0;
   padding: 0.75vw 1.5vw;
   white-space: nowrap;
+}
+nav a.ctaButton:hover,
+nav a.ctaButton:hover > i:before {
+  border-color: #f00 !important;
+  color: #f00 !important;
 }
 a.ctaButton i {
   margin-left: 15px;
@@ -2055,7 +2061,7 @@ body.darkSlider div.slideTextOverlay {
   color: #1a1a1a;
 }
 div.brandCarousel {
-  padding: 0 3vw 1.5vw 3vw;
+  padding: 1.5vw 3vw 1.5vw 3vw;
 }
 div.brandCarousel div.slickItem {
   height: 60px;
@@ -3093,6 +3099,12 @@ a:link,
 a:visited {
   color: #1a1a1a;
   text-decoration: none;
+}
+body > header a:link,
+body > header a:visited,
+#navHeader a:link,
+#navHeader a:visited {
+  color: #fff;
 }
 p a:link,
 p a:visited,

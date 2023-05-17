@@ -127,13 +127,17 @@ div.containSlider div.content div > a
 
 nav a.ctaButton
     background:none
-    border-color: brand1
-    color:brand1 !important
+    border-color: white
+    color:white !important
     margin-left: 0
     margin-right: marXS
     margin-bottom: 0
     padding:padXXS*.75 padXS
     white-space: nowrap
+nav a.ctaButton:hover,
+nav a.ctaButton:hover > i:before
+    border-color: brand6 !important
+    color:brand6 !important
 
 a.ctaButton i
     margin-left:15px 
@@ -747,7 +751,7 @@ body.darkSlider div.slideTextOverlay
 /* brand carousel in masthead */
 
 div.brandCarousel
-    padding:0 padM padXS padM
+    padding:padXS padM padXS padM
 
 div.brandCarousel div.slickItem
     height:60px

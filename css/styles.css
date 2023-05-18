@@ -1469,6 +1469,10 @@ header.sticky .imgText.stacked picture {
   -o-box-orient: vertical;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 .mLogo.long picture {
   max-width: 150px !important;
